@@ -2,9 +2,6 @@
 - hosts: all
   become: yes
   tasks:
-    - name: Install packages
-    apt:
-      name:
-      - fail2ban
-      state: latest
-      cache_valid_time: 3600
+    - name: Install fail2ban
+      apt:
+        name: fail2ban
