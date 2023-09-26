@@ -13,7 +13,7 @@ tasks:
     #send teams notificaiton using webhook
   - name: Send Teams Message
     url:
-      url: "https://qcsdirect.webhook.office.com/webhookb2/16f75652-74b3-4249-a55f-d1386ffb7b59@c1894785-35b8-4b62-ba33-c49bb9db2f4b/IncomingWebhook/cebfd2e6887040b2951bccec24573ffe/b67c22a2-26eb-406d-9011-365f6d6ac197"
+      url: ""
       method: POST
       body_format: json
       body: '{"content": "Disk space on {{ inventory_hostname }} is above 80%!"}'
