@@ -1,1 +1,10 @@
 
+- hosts: all
+  roles:
+    - ufw
+  vars:
+    ufw_rules:
+      - rule: allow
+        to_port: 22
+        protocol: tcp
+        comment: 'allow incoming connection on standard ssh port'
