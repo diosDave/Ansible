@@ -1,1 +1,27 @@
+- name: Install New Relic infrastructure and logs
 
+  hosts: all
+
+  roles:
+
+    - role: newrelic.newrelic_install
+
+  vars:
+
+    targets:
+
+      - infrastructure
+
+      - logs
+
+      - apm-php
+
+  environment:
+
+    NEW_RELIC_API_KEY: NRAK-0E2S6BUE6USNPAV61YMZ5UTKAE4
+
+    NEW_RELIC_ACCOUNT_ID: 3320766
+
+    NEW_RELIC_REGION: US
+
+    NEW_RELIC_APPLICATION_NAME: "PHP Application"
